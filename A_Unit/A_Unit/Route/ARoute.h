@@ -1,20 +1,19 @@
 //
-//  A_Unit.h
+//  ARoute.h
 //  A_Unit
 //
 //  Created by wangshen on 16/12/2.
 //  Copyright © 2016年 LP_Macmini. All rights reserved.
 //
 
-//业务模块
-
 #import <Foundation/Foundation.h>
-#import "A_A1FirstController.h"
-
-@interface A_Unit : NSObject
+#import "WSRoute.h"
 
 
-+ (void)sayHello;
+//处理模块间的跳转 ，如果处理不了 向上发送 －
+
+
+@interface ARoute : WSRoute
 
 
 @end

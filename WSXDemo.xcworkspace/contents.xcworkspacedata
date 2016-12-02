@@ -10,4 +10,10 @@
    <FileRef
       location = "group:B_Unit/B_Unit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:WSKit/WSKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WSFoundation/WSFoundation.xcodeproj">
+   </FileRef>
 </Workspace>

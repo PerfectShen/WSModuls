@@ -10,6 +10,9 @@
 		DBA67C081DF11B7A0007BFBF /* B_Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67C071DF11B7A0007BFBF /* B_Unit.m */; };
 		DBA67C091DF11B7A0007BFBF /* B_Unit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBA67C061DF11B7A0007BFBF /* B_Unit.h */; };
 		DBA67C1D1DF121A50007BFBF /* B_B1FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67C1C1DF121A50007BFBF /* B_B1FirstController.m */; };
+		DBA67C3A1DF13F5A0007BFBF /* BRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67C391DF13F5A0007BFBF /* BRoute.m */; };
+		DBB35C751DF177F800430186 /* WSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB35C741DF177F800430186 /* WSFoundation.framework */; };
+		DBB35C771DF177FB00430186 /* WSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB35C761DF177FB00430186 /* WSKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,10 @@
 		DBA67C071DF11B7A0007BFBF /* B_Unit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = B_Unit.m; sourceTree = "<group>"; };
 		DBA67C1B1DF121A50007BFBF /* B_B1FirstController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B_B1FirstController.h; sourceTree = "<group>"; };
 		DBA67C1C1DF121A50007BFBF /* B_B1FirstController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B_B1FirstController.m; sourceTree = "<group>"; };
+		DBA67C381DF13F5A0007BFBF /* BRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRoute.h; sourceTree = "<group>"; };
+		DBA67C391DF13F5A0007BFBF /* BRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRoute.m; sourceTree = "<group>"; };
+		DBB35C741DF177F800430186 /* WSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSFoundation.framework; path = "../WSFoundation/build/Debug-iphoneos/WSFoundation.framework"; sourceTree = "<group>"; };
+		DBB35C761DF177FB00430186 /* WSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSKit.framework; path = "../WSKit/build/Debug-iphoneos/WSKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB35C771DF177FB00430186 /* WSKit.framework in Frameworks */,
+				DBB35C751DF177F800430186 /* WSFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +58,7 @@
 			children = (
 				DBA67C051DF11B7A0007BFBF /* B_Unit */,
 				DBA67C041DF11B7A0007BFBF /* Products */,
+				DBB35C731DF177F800430186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +73,7 @@
 		DBA67C051DF11B7A0007BFBF /* B_Unit */ = {
 			isa = PBXGroup;
 			children = (
+				DBA67C371DF13F500007BFBF /* Route */,
 				DBA67C191DF1218B0007BFBF /* B_B1 */,
 				DBA67C061DF11B7A0007BFBF /* B_Unit.h */,
 				DBA67C071DF11B7A0007BFBF /* B_Unit.m */,
@@ -85,6 +96,24 @@
 				DBA67C1C1DF121A50007BFBF /* B_B1FirstController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DBA67C371DF13F500007BFBF /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				DBA67C381DF13F5A0007BFBF /* BRoute.h */,
+				DBA67C391DF13F5A0007BFBF /* BRoute.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		DBB35C731DF177F800430186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB35C761DF177FB00430186 /* WSKit.framework */,
+				DBB35C741DF177F800430186 /* WSFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +175,7 @@
 			files = (
 				DBA67C1D1DF121A50007BFBF /* B_B1FirstController.m in Sources */,
 				DBA67C081DF11B7A0007BFBF /* B_Unit.m in Sources */,
+				DBA67C3A1DF13F5A0007BFBF /* BRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +273,10 @@
 		DBA67C0D1DF11B7A0007BFBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../WSKit/**",
+					"$(SRCROOT)/../WSFoundation/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -252,6 +286,10 @@
 		DBA67C0E1DF11B7A0007BFBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../WSKit/**",
+					"$(SRCROOT)/../WSFoundation/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -277,6 +315,7 @@
 				DBA67C0E1DF11B7A0007BFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

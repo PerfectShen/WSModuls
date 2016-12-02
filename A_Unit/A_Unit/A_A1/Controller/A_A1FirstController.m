@@ -10,6 +10,8 @@
 
 @interface A_A1FirstController ()
 
+@property (nonatomic,strong) UIButton *button;
+
 @end
 
 @implementation A_A1FirstController
@@ -17,6 +19,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.button];
+    
+    
+}
+
+#pragma mark - getter
+- (UIButton *)button{
+
+    if (!_button) {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        _button.frame = CGRectMake(0, 100, self.view.frame.size.width, 40);
+        [_button setTitle:@"跳转" forState:UIControlStateNormal];
+        [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+  
+    return _button;
+    
+}
+
+- (void)buttonAction:(UIButton *)sender {
+    
+    NSLog(@".%@",self.view.window);
+    [ARoute tourlString:@"wslocal://B/first" userInfo:@{}];
+
 }
 
 - (void)didReceiveMemoryWarning {

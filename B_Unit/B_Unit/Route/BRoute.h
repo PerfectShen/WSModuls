@@ -1,20 +1,14 @@
 //
-//  A_Unit.h
-//  A_Unit
+//  BRoute.h
+//  B_Unit
 //
 //  Created by wangshen on 16/12/2.
 //  Copyright © 2016年 LP_Macmini. All rights reserved.
 //
 
-//业务模块
-
 #import <Foundation/Foundation.h>
-#import "A_A1FirstController.h"
+#import "WSRoute.h"
 
-@interface A_Unit : NSObject
-
-
-+ (void)sayHello;
-
+@interface BRoute : WSRoute
 
 @end

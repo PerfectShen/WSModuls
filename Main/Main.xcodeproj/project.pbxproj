@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		DBA67BD01DF1179A0007BFBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67BCF1DF1179A0007BFBF /* main.m */; };
 		DBA67BD31DF1179A0007BFBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67BD21DF1179A0007BFBF /* AppDelegate.m */; };
-		DBA67BD91DF1179A0007BFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA67BD71DF1179A0007BFBF /* Main.storyboard */; };
 		DBA67BDB1DF1179A0007BFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA67BDA1DF1179A0007BFBF /* Assets.xcassets */; };
 		DBA67BDE1DF1179A0007BFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA67BDC1DF1179A0007BFBF /* LaunchScreen.storyboard */; };
 		DBA67C111DF11C390007BFBF /* libA_Unit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA67C101DF11C390007BFBF /* libA_Unit.a */; };
 		DBA67C131DF11C3C0007BFBF /* libB_Unit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA67C121DF11C3C0007BFBF /* libB_Unit.a */; };
+		DBB35C7D1DF1781200430186 /* WSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB35C7C1DF1781200430186 /* WSFoundation.framework */; };
+		DBB35C7F1DF1781500430186 /* WSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB35C7E1DF1781500430186 /* WSKit.framework */; };
+		DBB35C831DF179AE00430186 /* MainRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB35C821DF179AE00430186 /* MainRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +23,16 @@
 		DBA67BCF1DF1179A0007BFBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBA67BD11DF1179A0007BFBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBA67BD21DF1179A0007BFBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBA67BD81DF1179A0007BFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA67BDA1DF1179A0007BFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA67BDD1DF1179A0007BFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA67BDF1DF1179A0007BFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBA67C101DF11C390007BFBF /* libA_Unit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libA_Unit.a; path = "../A_Unit/build/Debug-iphoneos/libA_Unit.a"; sourceTree = "<group>"; };
 		DBA67C121DF11C3C0007BFBF /* libB_Unit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libB_Unit.a; path = "../B_Unit/build/Debug-iphoneos/libB_Unit.a"; sourceTree = "<group>"; };
+		DBB35C1D1DF16B9D00430186 /* libMainRoute.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMainRoute.a; path = "../../../Library/Developer/Xcode/DerivedData/WSXDemo-fewhmqdgxovsllfyjaxozcenxdby/Build/Products/Debug-iphonesimulator/libMainRoute.a"; sourceTree = "<group>"; };
+		DBB35C7C1DF1781200430186 /* WSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSFoundation.framework; path = "../WSFoundation/build/Debug-iphoneos/WSFoundation.framework"; sourceTree = "<group>"; };
+		DBB35C7E1DF1781500430186 /* WSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WSKit.framework; path = "../WSKit/build/Debug-iphoneos/WSKit.framework"; sourceTree = "<group>"; };
+		DBB35C811DF179AE00430186 /* MainRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainRoute.h; sourceTree = "<group>"; };
+		DBB35C821DF179AE00430186 /* MainRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainRoute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB35C7F1DF1781500430186 /* WSKit.framework in Frameworks */,
+				DBB35C7D1DF1781200430186 /* WSFoundation.framework in Frameworks */,
 				DBA67C131DF11C3C0007BFBF /* libB_Unit.a in Frameworks */,
 				DBA67C111DF11C390007BFBF /* libA_Unit.a in Frameworks */,
 			);
@@ -62,9 +70,9 @@
 		DBA67BCD1DF1179A0007BFBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DBB35C801DF1799B00430186 /* MainRoute */,
 				DBA67BD11DF1179A0007BFBF /* AppDelegate.h */,
 				DBA67BD21DF1179A0007BFBF /* AppDelegate.m */,
-				DBA67BD71DF1179A0007BFBF /* Main.storyboard */,
 				DBA67BDA1DF1179A0007BFBF /* Assets.xcassets */,
 				DBA67BDC1DF1179A0007BFBF /* LaunchScreen.storyboard */,
 				DBA67BDF1DF1179A0007BFBF /* Info.plist */,
@@ -84,10 +92,22 @@
 		DBA67C0F1DF11C390007BFBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBB35C7E1DF1781500430186 /* WSKit.framework */,
+				DBB35C7C1DF1781200430186 /* WSFoundation.framework */,
+				DBB35C1D1DF16B9D00430186 /* libMainRoute.a */,
 				DBA67C121DF11C3C0007BFBF /* libB_Unit.a */,
 				DBA67C101DF11C390007BFBF /* libA_Unit.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBB35C801DF1799B00430186 /* MainRoute */ = {
+			isa = PBXGroup;
+			children = (
+				DBB35C811DF179AE00430186 /* MainRoute.h */,
+				DBB35C821DF179AE00430186 /* MainRoute.m */,
+			);
+			path = MainRoute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +170,6 @@
 			files = (
 				DBA67BDE1DF1179A0007BFBF /* LaunchScreen.storyboard in Resources */,
 				DBA67BDB1DF1179A0007BFBF /* Assets.xcassets in Resources */,
-				DBA67BD91DF1179A0007BFBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,20 +182,13 @@
 			files = (
 				DBA67BD31DF1179A0007BFBF /* AppDelegate.m in Sources */,
 				DBA67BD01DF1179A0007BFBF /* main.m in Sources */,
+				DBB35C831DF179AE00430186 /* MainRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBA67BD71DF1179A0007BFBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBA67BD81DF1179A0007BFBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBA67BDC1DF1179A0007BFBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +297,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../A_Unit/**",
 					"$(SRCROOT)/../B_Unit/**",
+					"$(SRCROOT)/../WSKit/**",
+					"$(SRCROOT)/../WSFoundation/**",
 				);
 				INFOPLIST_FILE = Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -300,6 +314,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../A_Unit/**",
 					"$(SRCROOT)/../B_Unit/**",
+					"$(SRCROOT)/../WSKit/**",
+					"$(SRCROOT)/../WSFoundation/**",
 				);
 				INFOPLIST_FILE = Main/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
