@@ -10,4 +10,6 @@
 
 @interface MainRoute : WSRoute
 
++ (void)config;
+
 @end

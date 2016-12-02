@@ -7,8 +7,27 @@
 //
 
 #import "MainRoute.h"
+#import "ARoute.h"
+#import "BRoute.h"
+
+@interface MainRoute ()
+
+//@property (nonatomic,strong) 
+
+@end
 
 @implementation MainRoute
+
+
++ (void)config{
+
+    MainRoute *route = [MainRoute shareRoute];
+    ARoute *aroute = [ARoute shareRoute];
+    BRoute *broute = [BRoute shareRoute];
+    aroute.mainRoute = route;
+    broute.mainRoute = route;
+    
+}
 
 - (instancetype)init{
 

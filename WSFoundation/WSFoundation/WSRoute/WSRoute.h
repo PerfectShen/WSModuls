@@ -28,10 +28,11 @@ extern NSString * const WSLocalProtoclolName; //本地跳转协议头
 
 @property (nonatomic,copy) NSString *currentModuleName; //当前模块名
 
-
 @property (nonatomic,copy) NSString *urlString;
 @property (nonatomic,strong) NSDictionary *userInfo;
 
+
+@property (nonatomic,strong) id mainRoute; //保持总路由
 
 //单例
 + (instancetype)shareRoute;
