@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676D0E1A1DF270BD00A9C7EA /* WSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676D0E191DF270BD00A9C7EA /* WSNavigationController.m */; };
+		676D0E1D1DF270D200A9C7EA /* WSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 676D0E1C1DF270D200A9C7EA /* WSTabBarController.m */; };
 		DBA67BD01DF1179A0007BFBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67BCF1DF1179A0007BFBF /* main.m */; };
 		DBA67BD31DF1179A0007BFBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA67BD21DF1179A0007BFBF /* AppDelegate.m */; };
 		DBA67BDB1DF1179A0007BFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA67BDA1DF1179A0007BFBF /* Assets.xcassets */; };
@@ -19,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		676D0E181DF270BD00A9C7EA /* WSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSNavigationController.h; sourceTree = "<group>"; };
+		676D0E191DF270BD00A9C7EA /* WSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSNavigationController.m; sourceTree = "<group>"; };
+		676D0E1B1DF270D200A9C7EA /* WSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTabBarController.h; sourceTree = "<group>"; };
+		676D0E1C1DF270D200A9C7EA /* WSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTabBarController.m; sourceTree = "<group>"; };
+		676D0E1E1DF2752B00A9C7EA /* Main-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Main-Prefix.pch"; sourceTree = "<group>"; };
 		DBA67BCB1DF1179A0007BFBF /* Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA67BCF1DF1179A0007BFBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBA67BD11DF1179A0007BFBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		676D0E151DF2705D00A9C7EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				676D0E171DF270A200A9C7EA /* WSNavigationController */,
+				676D0E161DF2709400A9C7EA /* WSTabBarController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		676D0E161DF2709400A9C7EA /* WSTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				676D0E1B1DF270D200A9C7EA /* WSTabBarController.h */,
+				676D0E1C1DF270D200A9C7EA /* WSTabBarController.m */,
+			);
+			path = WSTabBarController;
+			sourceTree = "<group>";
+		};
+		676D0E171DF270A200A9C7EA /* WSNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				676D0E181DF270BD00A9C7EA /* WSNavigationController.h */,
+				676D0E191DF270BD00A9C7EA /* WSNavigationController.m */,
+			);
+			path = WSNavigationController;
+			sourceTree = "<group>";
+		};
 		DBA67BC21DF117990007BFBF = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +104,7 @@
 		DBA67BCD1DF1179A0007BFBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				676D0E151DF2705D00A9C7EA /* Classes */,
 				DBB35C801DF1799B00430186 /* MainRoute */,
 				DBA67BD11DF1179A0007BFBF /* AppDelegate.h */,
 				DBA67BD21DF1179A0007BFBF /* AppDelegate.m */,
@@ -85,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA67BCF1DF1179A0007BFBF /* main.m */,
+				676D0E1E1DF2752B00A9C7EA /* Main-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676D0E1D1DF270D200A9C7EA /* WSTabBarController.m in Sources */,
 				DBA67BD31DF1179A0007BFBF /* AppDelegate.m in Sources */,
+				676D0E1A1DF270BD00A9C7EA /* WSNavigationController.m in Sources */,
 				DBA67BD01DF1179A0007BFBF /* main.m in Sources */,
 				DBB35C831DF179AE00430186 /* MainRoute.m in Sources */,
 			);
@@ -294,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Main/Main-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../A_Unit/**",
 					"$(SRCROOT)/../B_Unit/**",
@@ -311,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Main/Main-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../A_Unit/**",
 					"$(SRCROOT)/../B_Unit/**",

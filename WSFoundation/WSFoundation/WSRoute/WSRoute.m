@@ -28,7 +28,6 @@ extern NSString * const WSLocalProtoclolName = @"wslocal"; //本地跳转协议�
     
     if (self = [super init]) {
         
-        self.currentModuleName = @"Main";
     }
     return self;
 }
@@ -38,7 +37,11 @@ extern NSString * const WSLocalProtoclolName = @"wslocal"; //本地跳转协议�
     
     
     //解析处理，如果可以处理则处理跳转，如果不能处理再向上发送
-    
+    WSRoute *route = [[self class] shareRoute];
+    route.urlString = urlstring;
+    route.userInfo = userInfo;
+    [route parserUrl];
+
     
 }
 
@@ -66,9 +69,8 @@ extern NSString * const WSLocalProtoclolName = @"wslocal"; //本地跳转协议�
         }else{
             //上面的模块处理
             NSLog(@"跨模块跳转");
-            //            Class aclass = NSClassFromString(@"BRoute");
-            //            BRoute *route = [BRoute shareRoute];
-            //            [route tofile:filename];
+           // [self.mainRoute tofile:filename];
+            [self.mainRoute toModule:moduleName file:filename];
         }
     }else{
         

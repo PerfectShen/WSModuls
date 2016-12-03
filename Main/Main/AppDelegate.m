@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "A_A1FirstController.h"
+//#import "A_A1FirstController.h"
+#import "WSTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -19,11 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //配置 路由 -
+    [MainRoute config];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[A_A1FirstController alloc] init];
+    UITabBarController *tc = [[WSTabBarController alloc] init];
+    self.window.rootViewController = tc;
     
     return YES;
 }

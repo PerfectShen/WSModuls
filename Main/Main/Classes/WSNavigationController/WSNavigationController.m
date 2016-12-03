@@ -1,25 +1,22 @@
 //
-//  B_B1FirstController.m
-//  B_Unit
+//  WSNavigationController.m
+//  Main
 //
-//  Created by wangshen on 16/12/2.
+//  Created by 王燊 on 16/12/3.
 //  Copyright © 2016年 LP_Macmini. All rights reserved.
 //
 
-#import "B_B1FirstController.h"
+#import "WSNavigationController.h"
 
-@interface B_B1FirstController ()
+@interface WSNavigationController ()
 
 @end
 
-@implementation B_B1FirstController
+@implementation WSNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"B1";
-}
-- (IBAction)buttonAction:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {

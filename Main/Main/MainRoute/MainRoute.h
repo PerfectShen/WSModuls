@@ -7,8 +7,14 @@
 //
 
 #import "WSRoute.h"
+#import "WSTabBarController.h"
+#import "ARoute.h"
+#import "BRoute.h"
+
 
 @interface MainRoute : WSRoute
+
+@property (nonatomic,strong) WSTabBarController* tabBarController;
 
 + (void)config;
 

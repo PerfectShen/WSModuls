@@ -22,6 +22,8 @@
     self.view.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:self.button];
     
+    self.navigationItem.title = @"A";
+    
     
 }
 

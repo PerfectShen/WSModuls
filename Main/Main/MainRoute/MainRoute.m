@@ -7,8 +7,6 @@
 //
 
 #import "MainRoute.h"
-#import "ARoute.h"
-#import "BRoute.h"
 
 @interface MainRoute ()
 
@@ -43,4 +41,20 @@
     
 }
 
+
+- (void)toModule:(NSString *)module file:(NSString *)fileName{
+
+
+    if ([module isEqualToString:@"A"]) {
+        
+        self.tabBarController.selectedIndex = 0;
+        [[ARoute shareRoute] tofile:fileName];
+    }
+    
+    if ([module isEqualToString:@"B"]) {
+        self.tabBarController.selectedIndex = 1;
+        [[BRoute shareRoute] tofile:fileName];
+    }
+    
+}
 @end
